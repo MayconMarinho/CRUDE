@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(to right, #487797, #2b0e40);
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+#container {
+    padding: 15px;
+
+
+}
+
+#forms {
+
+    
+}
+.tabela {
+    text-align: left;
+    border: 5px solid black;
+    min-height: 75vh;
+    background: #1982a5;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 30px;
+}
+
+    #footer {
+    border: 1px solid black;
+    background: linear-gradient(to right, #253d4d, #481070);
+    width: 100%;
+    color: white;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer a:hover {
+    background-color: midnightblue;
+}
+
+input[type="text"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+
+}
+
+textarea {
+    height: 100px;
+}
+
+#btn {
+    color: white;
+    background-color: #8234ad;
+    width: 130px;
+    height: 30px;
+}
+
+#btn:hover {
+    background-color: rgb(65, 168, 180);
+}
+
+.tabela input:hover {
+    background-color: rgb(65, 168, 180);
+}
+
+span {
+    font-size: 15px;
+    color: rgb(93, 4, 131);
+}

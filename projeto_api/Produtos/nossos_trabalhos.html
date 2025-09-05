@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Página inicial</title>
+
+    <style>
+        body {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #nav {
+            background: linear-gradient(to right, #253d4d, #481070);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border-bottom: 2px solid #253d4d;
+        }
+
+        nav a {
+            margin: 20px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: yellowgreen;
+            color: #fff;
+        }
+
+        #container {
+            display: grid;
+            grid-template-areas:
+                "divulmain01 divulmain02"
+                "divul01 partner"
+                "divul02 partner"
+                "divul03 partner"
+                "footer footer";
+            grid-template-rows: 400px 250px 250px 250px 150px;
+            grid-template-columns: 70% 30%;
+            gap: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        #divulmain01 {
+            grid-area: divulmain01;
+            background: #1982a5;
+            border-radius: 10px;
+            border: solid 1px #ccc;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            color: #333;
+            overflow-y: auto;
+        }
+
+        #divulmain02 {
+            grid-area: divulmain02;
+            background-image: url(logo.jpeg.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            border: solid 1px #ccc;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #divul01 {
+            grid-area: divul01;
+            background: #1982a5;
+            border-radius: 10px;
+            border: solid 1px #ccc;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #divul02 {
+            grid-area: divul02;
+            background: #1982a5;
+            border-radius: 10px;
+            border: solid 1px #ccc;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #divul03 {
+            grid-area: divul03;
+            background: #1982a5;
+            border-radius: 10px;
+            border: solid 1px #ccc;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #partner {
+            grid-area: partner;
+            background: linear-gradient(to right, #000000, #434343);
+            border-radius: 10px;
+            border: solid 1px #ccc;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        #partner img {
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        #footer {
+            grid-area: footer;
+            border-radius: 10px;
+            border: solid 1px #ccc;
+            background: linear-gradient(to right, #253d4d, #481070);
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 14px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        #footer a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        #footer a:hover {
+            color: #ffeb3b;
+        }
+
+        #r {
+            font-size: 16px;
+            padding: 15px;
+        }
+
+        #btn {
+            color: white;
+            background-color: #8234ad;
+            width: 150px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #btn:hover {
+            background-color: #a150d7;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td img {
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #fff
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="nav">
+        <nav>
+            <a href="../cadastro/cadastro.html">Cadastre-se!</a>
+            <a href="../produtos/nossos_trabalhos.html">Página inicial</a>
+            <a href="../consulta/consulta.html">Pedidos</a>
+            <a href="../pedidos/pedidos.html">Fazer pedido</a>
+        </nav>
+    </div>
+
+    <div id="container">
+
+        <div id="divulmain01">
+            <h1 align="center">PratikLar</h1>
+            <p>As obras de caridade desempenham um papel crucial na construção de uma sociedade mais justa, compassiva e solidária...</p>
+            <p>Uma das principais importâncias das obras de caridade reside no fato de que elas podem fornecer ajuda imediata...</p>
+            <p>Um exemplo inspirador é a loja de utilidades domésticas <strong>PratikLar</strong>, que além de oferecer soluções práticas...</p>
+            <p>Além de oferecer suporte material, as obras de caridade também promovem valores como empatia, generosidade e altruísmo...</p>
+        </div>
+
+        <div id="divulmain02"></div>
+
+        <div id="divul01">
+            <table>
+                <tr>
+                    <td id="r"><img src="processador.jpeg.jpg" width="200px"></td>
+                    <td id="r">
+                        <strong>Produto: </strong>Processador manual<br>
+                        <strong>Valor: </strong>R$39,99<br>
+                        <strong>Referência: </strong>22<br>
+                        <a href="../pedidos/pedidos.html">
+    <input type="button" value="Comprar" id="btn">
+</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="divul02">
+            <table>
+                <tr>
+                    <td id="r"><img src="jarra.jpeg.jpg" width="200px"></td>
+                    <td id="r">
+                        <strong>Produto: </strong>Jarra de vidro<br>
+                        <strong>Valor: </strong>R$35,99<br>
+                        <strong>Referência: </strong>67<br>
+                        <a href="../pedidos/pedidos.html">
+    <input type="button" value="Comprar" id="btn">
+</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="divul03">
+            <table>
+                <tr>
+                    <td id="r"><img src="pote.jpeg.jpg" width="200px"></td>
+                    <td id="r">
+                        <strong>Produto: </strong>Pote hermético<br>
+                        <strong>Valor: </strong>R$11,99<br>
+                        <strong>Referência: </strong>102<br>
+                        <a href="../pedidos/pedidos.html">
+    <input type="button" value="Comprar" id="btn">
+</a>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="partner">
+            <h1>Parceiros</h1>
+            <table id="parca">
+                <tr>
+                    <td><img src="eniac.jpeg" width="100px"></td>
+                    <td><img src="uninove1.jpeg" width="100px"></td>
+                </tr>
+                <tr>
+                    <td><img src="ef.jpeg" width="100px"></td>
+                    <td><img src="unip.jpeg" width="100px"></td>
+                </tr>
+                <tr>
+                    <td><img src="senai.jpeg" width="100px"></td>
+                    <td><img src="senac.jpeg" width="100px"></td>
+                </tr>
+                <tr>
+                    <td><img src="fatec.jpeg" width="100px"></td>
+                    <td><img src="etec.jpeg" width="100px"></td>
+                </tr>
+                <tr>
+                    <td><img src="cru.jpeg" width="100px"></td>
+                    <td><img src="ung.jpeg" width="100px"></td>
+                </tr>
+                <tr>
+                    <td><img src="funb.jpeg" width="100px"></td>
+                    <td><img src="alura.jpeg" width="100px"></td>
+                </tr>
+                <tr>
+                    <td><img src="it.jpeg" width="100px"></td>
+                    <td><img src="san.jpeg" width="100px"></td>
+                </tr>
+            </table>
+        </div>
+
+        <table id="footer">
+            <tr style="font-weight: bold;">
+                <td>Redes Sociais</td>
+                <td>Contato</td>
+                <td>Endereço</td>
+                <td>Colaboradores</td>
+            </tr>
+            <tr>
+                <td>pratiklar1 <img src="i.jpeg" width="12px"></td>
+                <td>(11) 9 3411-8076</td>
+                <td>Rua das Flores, 179 - Padre Bento - Guarulhos, SP</td>
+                <td>Centro Universitário Eniac</td>
+            </tr>
+            <tr>
+                <td>PratikLar <img src="f.jpeg" width="12px"></td>
+                <td>pratiklar01@gmail.com</td>
+                <td></td>
+                <td>Universidade Paulista</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Universidade Nove de Julho</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>

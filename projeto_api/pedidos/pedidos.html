@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu pedido!</title>
+    <link rel="stylesheet" href="pedidos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+    <div id="container">
+    <div id="forms">
+        <a href="../produtos/nossos_trabalhos.html">
+    <input type="button" value="Voltar" id="btn">
+</a>
+        <form id="pedidos" method="post">
+    <table class="tabela" align="center">
+        <tr align="center"><td><img src="logo.jpeg.jpg" height="145" width="145"></td></tr>
+        <tr align="center"><td><strong>PratikLar</strong></td></tr>
+        <tr align="left" style="font-size: 15px;"><td><strong>Faça já o seu pedido!</strong></td></tr>
+        <tr><td>Nome: <span id="errorNome"></span><input type="text" placeholder="Ex: João Victor" id="txtNome" name="txtNome"></td></tr> <br>
+        <tr><td>CPF: <span id="errorCPF"></span><input type="text" placeholder="Ex: 000.000.000-00" id="txtCPF" name="txtCPF"></td></tr> <br>
+        <tr><td>Endereço: <span id="errorEndereco"></span><input type="text" placeholder="Ex: Av. Socorro, 147" id="txtEndereco" name="txtEndereco"></td></tr> <br>
+        <tr><td>Telefone: <span id="errorTelefone"></span><input type="text" placeholder="Ex: (11) 9 2456-8978" id="txtTelefone" name="txtTelefone"></td></tr> <br>
+        <tr><td>Produto: <span id="errorProduto"></span><input type="text" placeholder="Ex: Processador ref: 2528" id="txtProduto" name="txtProduto"></td></tr> <br>
+        <tr><td>Fornecedor:<span id="errorFornecedor"></span><select name="txtFornecedor" id="txtFornecedor" required>
+            <option value="selecionar">Selecionar</option>
+            <option value="sanremo">Sanremo</option>
+            <option value="plasutil">Plasútil</option>
+            <option value="modenutti">Modenutti</option>
+            <option value="plasduran">Plasduran</option>
+            <option value="martins">Martins</option>
+        <tr><td>Forma de pagamento:<span id="errorFormadepagamento"></span><select name="txtPagamento" id="txtPagamento" required>
+            <option value="selecionar">Selecionar</option>
+            <option value="dinheiro">Dinheiro</option>
+            <option value="debito">Débito</option>
+            <option value="credito">Crédito</option>
+            <option value="pix">Pix</option>
+            <option value="ticket">Ticket</option>
+        </select></td></tr>
+        <tr><td>Transportadora:<span id="errorTransportadora"></span><select name="txtTransportadora" id="txtTransportadora" required>
+            <option value="selecionar">Selecionar</option>
+            <option value="rocie">Rocie</option>
+            <option value="cnlog">CnLog</option>
+            <option value="rocell">Rocell</option>
+            <option value="lptransportadora">LpTransportadora</option>
+            <option value="vwtransportes">VwTransportes</option>
+        </select></td></tr>
+    <tr>
+    <tr>
+    <td><input type="submit" value="Enviar pedido!" id="btn">
+    </table>
+    </form>
+    </div>
+    </div>
+    <table id="footer">
+        <tr style="font-weight: bold"></tr> <td>Redes Sociais</td> <td>Contato</td> <td>Endereço</td> <td>Colaboradores</td> </tr>
+        <tr></tr> <td>pratiklar1 <img src="i.jpeg" width="12px"></td> <td>(11) 9 3411-8076</td> <td>Rua das Flores, 179 - Padre Bento - Guarulhos, SP</td> <td>Centro Universitário Eniac</td> </tr>
+        <tr></tr> <td>PratikLar <img src="f.jpeg" width="12px"></td> <td>pratiklar01@gmail.com</td> <td></td> <td>Universidade Paulista</td> </tr>
+        <tr></tr> <td></td> <td></td> <td></td> <td>Universidade Nove de Julho</td> </tr>
+    </table>
+
+    <script src="pedidos.js"></script>
+
+    
+</body>
+</html>
